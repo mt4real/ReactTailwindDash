@@ -1,4 +1,4 @@
-##ReactTailwindDash 
+###ReactTailwindDash 
 
 ReactTailwindDash is an open source inspired by Adminkit.It was well crafted using modern utility CSS and Frontend framework, namely React and Tailwind CSS.
 
