@@ -13,6 +13,13 @@ import IconSoftwareLayers from "../../../assets/icons/IconSoftwareLayers";
 import IconColumnsGap from "../../../assets/icons/IconColumnsGap";
 import IconTableViewComfortable from '../../../assets/icons/IconTable';
 import { Link } from 'react-router-dom';
+import IconInvoice from '../../../assets/icons/IconInvoice';
+import IconRProject from '../../../assets/icons/IconRProject';
+import IconProfile from '../../../assets/icons/IconProfile';
+import IconAuthy from '../../../assets/icons/IconAuthy';
+import IconMessageRoundedError from '../../../assets/icons/IconMessageRounError';
+import IconListTask from '../../../assets/icons/IconListTask';
+import IconUikit from '../../../assets/icons/IconUiKit';
 
 
 export default function SidebarSecond() {
@@ -119,6 +126,8 @@ export default function SidebarSecond() {
 ];
 
     const dashboard=useContext(GlobalStateContext);
+    
+
 
     
   return (
@@ -129,10 +138,10 @@ export default function SidebarSecond() {
       
 
        <ul className="flex flex-col justify-center pl-8">
-        <li className=" text-2xl  transition-all duration-500 ease-in-out mb-5  opacity-1 text-white"><Link to="#" role='button'><span className="mr-3"><IconHomeAlt className="inline-block w-4 h-4"/></span><span className="text-lg">Dashboard</span></Link></li>
+        <li className=" text-2xl  transition-all duration-500 ease-in-out mb-5  opacity-1 text-white"><Link to="/" role='button'><span className="mr-3"><IconHomeAlt className="inline-block w-4 h-4"/></span><span className="text-lg">Dashboard</span></Link></li>
         
-        <li className=" text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="#" role='button'><span className="mr-3"><IconCalendarWeek  className="inline-block w-4 h-4"/></span><span className="text-lg">Calendar</span></Link></li>
-        <li className=" text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="#" role='button'><span className="mr-3"><IconEnvelope  className="inline-block w-4 h-4"/></span><span className="text-lg">Projects</span></Link></li>
+        <li className=" text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="/calendar" role='button'><span className="mr-3"><IconCalendarWeek  className="inline-block w-4 h-4"/></span><span className="text-lg">Calendar</span></Link></li>
+        <li className=" text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="#" role='button'><span className="mr-3"><IconRProject  className="inline-block w-4 h-4"/></span><span className="text-lg">Projects</span></Link></li>
         
         <li onClick={()=>dashboard.setIsOpen(dashboard.isOpen==="pages"?undefined:"pages")} className="text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="#" role='button'><span className="mr-3"><IconPageBreak  className="inline-block w-4 h-4"/></span><span className="text-lg">Pages</span>
         <span className="inline-block float-right">{dashboard.isOpen==="pages"?<IconChevronDown className="inline-block transition-all duration-500 ease-in-out  transform rotate-180"/>:<IconChevronUp className="inline-block transition-all duration-500 ease-in-out transform rotate-90"/>}</span></Link>
@@ -148,8 +157,8 @@ export default function SidebarSecond() {
           ))
               }
             </li>
-            <li  className="text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="/profile-page" role='button'><span className="mr-3"><IconPagesLine  className="inline-block w-4 h-4"/></span><span className="text-lg">Profile</span></Link></li>
-            <li onClick={()=>dashboard.setIsOpen(dashboard.isOpen==="auth"?undefined:"auth")} className="text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="#" role='button'><span className="mr-3"><IconPageBreak  className="inline-block w-4 h-4"/></span><span className="text-lg">Auth</span>
+            <li  className="text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="/profile-page" role='button'><span className="mr-3"><IconProfile  className="inline-block w-4 h-4"/></span><span className="text-lg">Profile</span></Link></li>
+            <li onClick={()=>dashboard.setIsOpen(dashboard.isOpen==="auth"?undefined:"auth")} className="text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="#" role='button'><span className="mr-3"><IconAuthy  className="inline-block w-4 h-4"/></span><span className="text-lg">Auth</span>
               <span className="inline-block float-right">{dashboard.isOpen==="auth"?<IconChevronDown className="inline-block transition-all duration-500 ease-in-out  transform rotate-180"/>:<IconChevronUp className="inline-block transition-all duration-500 ease-in-out transform rotate-90"/>}</span></Link>
         
         {
@@ -166,7 +175,7 @@ export default function SidebarSecond() {
             
               }
             </li>
-            <li  onClick={()=>dashboard.setIsOpen(dashboard.isOpen==="error"?undefined:"error")} className="text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="#" role='button'><span className="mr-3"><IconPageBreak  className="inline-block w-4 h-4"/></span><span className="text-lg">Error</span>
+            <li  onClick={()=>dashboard.setIsOpen(dashboard.isOpen==="error"?undefined:"error")} className="text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="#" role='button'><span className="mr-3"><IconMessageRoundedError  className="inline-block w-4 h-4"/></span><span className="text-lg">Error</span>
               <span className="inline-block float-right">{dashboard.isOpen==="error"?<IconChevronDown className="inline-block transition-all duration-500 ease-in-out  transform rotate-180"/>:<IconChevronUp className="inline-block transition-all duration-500 ease-in-out transform rotate-90"/>}</span></Link>
         
         {
@@ -182,7 +191,7 @@ export default function SidebarSecond() {
             
               }
             </li>
-            <li onClick={()=>dashboard.setIsOpen(dashboard.isOpen==="layout"?undefined:"layout")} className="text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="#" role='button'><span className="mr-3"><IconPageBreak  className="inline-block w-4 h-4"/></span><span className="text-lg">Layouts</span>
+            <li onClick={()=>dashboard.setIsOpen(dashboard.isOpen==="layout"?undefined:"layout")} className="text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="#" role='button'><span className="mr-3"><IconLayoutSidebarInset  className="inline-block w-4 h-4"/></span><span className="text-lg">Layouts</span>
               <span className="inline-block float-right">{dashboard.isOpen==="layout"?<IconChevronDown className="inline-block transition-all duration-500 ease-in-out  transform rotate-180"/>:<IconChevronUp className="inline-block transition-all duration-500 ease-in-out transform rotate-90"/>}</span></Link>
         
         {
@@ -198,8 +207,8 @@ export default function SidebarSecond() {
               }
             </li>
 
-            <li className="text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="/tasks" role='button'><span className="mr-3"><IconSoftwareLayers  className="inline-block w-4 h-4"/></span><span className="text-lg">Tasks</span></Link></li>
-            <li className="text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="/invoice" role='button'><span className="mr-3"><IconColumnsGap  className="inline-block w-4 h-4"/></span><span className="text-lg">Invoice</span></Link></li>
+            <li className="text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="/tasks" role='button'><span className="mr-3"><IconListTask  className="inline-block w-4 h-4"/></span><span className="text-lg">Tasks</span></Link></li>
+            <li className="text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="/invoice" role='button'><span className="mr-3"><IconInvoice  className="inline-block w-4 h-4"/></span><span className="text-lg">Invoice</span></Link></li>
             <li onClick={()=>dashboard.setIsOpen(dashboard.isOpen==="table"?undefined:"table")} className="text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="#" role='button'><span className="mr-3"><IconTableViewComfortable  className="inline-block w-4 h-4"/></span><span className="text-lg">Tables</span>
               <span className="inline-block float-right">{dashboard.isOpen==="table"?<IconChevronDown className="inline-block transition-all duration-500 ease-in-out  transform rotate-180"/>:<IconChevronUp className="inline-block transition-all duration-500 ease-in-out transform rotate-90"/>}</span></Link>
         
@@ -215,7 +224,7 @@ export default function SidebarSecond() {
             
               }
             </li>
-            <li onClick={()=>dashboard.setIsOpen(dashboard.isOpen==="uiElement"?undefined:"uiElement")} className="text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="#" role='button'><span className="mr-3"><IconTableViewComfortable  className="inline-block w-4 h-4"/></span><span className="text-lg">UI Elements</span>
+            <li onClick={()=>dashboard.setIsOpen(dashboard.isOpen==="uiElement"?undefined:"uiElement")} className="text-2xl  transition-all duration-500 ease-in-out mb-5  text-gray-400 opacity-1"><Link to="#" role='button'><span className="mr-3"><IconUikit  className="inline-block w-4 h-4"/></span><span className="text-lg">UI Elements</span>
               <span className="inline-block float-right">{dashboard.isOpen==="uiElement"?<IconChevronDown className="inline-block transition-all duration-500 ease-in-out  transform rotate-180"/>:<IconChevronUp className="inline-block transition-all duration-500 ease-in-out transform rotate-90"/>}</span></Link>
         
         {

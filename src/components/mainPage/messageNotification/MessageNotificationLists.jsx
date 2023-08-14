@@ -167,7 +167,7 @@ export default function MessageNotificationLists() {
                   
             </div>
             <div className=" flex justify-center items-center">
-                <Button type="submit" className="bg-custom-blue hover:bg-custom-blue/90 w-full md:w-1/3 px-6 py-4 text-white shadow-lg  mb-10 text-lg font-normal">Load more</Button>
+                <Button type="submit" className="bg-custom-blue hover:bg-custom-blue/90 w-full md:w-1/3 px-6 py-4 text-white shadow-lg  mb-10 text-lg font-normal md:mx-0 mx-6">Load more</Button>
             </div>
            </div>
                 

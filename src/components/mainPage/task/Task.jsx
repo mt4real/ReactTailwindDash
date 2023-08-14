@@ -9,6 +9,7 @@ import Image3 from "../../../assets/images/avatar-3.jpg";
 import Image4 from "../../../assets/images/avatar-4.jpg";
 import Image5 from "../../../assets/images/avatar-5.jpg";
 import Button from "../../utils/button/Button";
+import IconPlus from "../../../assets/icons/IconPlus";
 
 
 
@@ -199,7 +200,7 @@ export default function Tasks() {
             <h4 className="text-2xl md:text-3xl text-black font-normal">Tasks</h4>
             </div>
             <div>
-            <Button className="bg-custom-blue rounded hover:text-white hover:bg-blue-600 text-white px-6 py-2">Add task</Button>
+            <Button className="bg-custom-blue rounded hover:text-white hover:bg-blue-600 text-white px-6 py-2"><IconPlus className="inline-block font-extrabold text-white text-2xl"></IconPlus>Add task</Button>
             </div>
             </div>
            <div className="flex flex-col md:flex-row lg:flex-row">

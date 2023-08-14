@@ -10,6 +10,8 @@ import Image4 from "../../../assets/images/avatar-4.jpg";
 import Image5 from "../../../assets/images/avatar-5.jpg";
 import Button from "../../utils/button/Button";
 import IconHelpCircleOutline from "../../../assets/icons/IconHelpCircleOutline";
+import IconCameraVideo from "../../../assets/icons/IconCameraVideo";
+import IconTelephone from "../../../assets/icons/IconTelephone";
 
 
 
@@ -275,8 +277,8 @@ export default function Chat() {
                           <span className="italic">typing...</span>
                         </div>
                         <div className="flex md:flex-row  gap-x-2 gap-y-3 mr-10  my-4 ">
-                            <Button className="bg-custom-blue/70 text-white md:py-3 py-1 px-6 rounded-md">tele</Button>
-                            <Button className="bg-teal-800/70 text-white md:py-3 py-1 px-6 rounded-md">tele</Button>
+                            <Button className="bg-custom-blue/70 text-white md:py-3 py-1 px-6 rounded-md"><IconTelephone className="text-2xl"/></Button>
+                            <Button className="bg-teal-800/70 text-white md:py-3 py-1 px-6 rounded-md"><IconCameraVideo className="text-2xl"/></Button>
                             <Button className="bg-gray-400/20 border border-gray-300 md:py-3 py-1 px-6 hover:bg-gray-400/80 text-gray-300 font-bold  rounded-md">...</Button>
                         </div>
                        

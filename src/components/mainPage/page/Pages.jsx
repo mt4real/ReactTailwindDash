@@ -22,6 +22,7 @@ import UIButton from "../uiElement/UIButton";
 import Cards from "../cards/Cards";
 import Grids from "../grid/Grid";
 import Accordion from "../accordion/Accordion";
+import Calendars from "../calendar/Calendar";
 
 
 function Pages(){
@@ -48,6 +49,7 @@ function Pages(){
     <Route path="/ui-cards" element={<Cards/>}/>
     <Route path="/ui-grids" element={<Grids/>}/>
     <Route path="/ui-accordions" element={<Accordion/>}/>
+    <Route path="/calendar" element={<Calendars/>}/>
 
 </Routes>
     )

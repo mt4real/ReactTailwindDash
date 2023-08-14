@@ -247,7 +247,7 @@ export default function Client() {
             <textarea cols="" rows="" id="message" name="message" className="w-full p-3 mb-4 rounded border border-gray-300  focus:border-custom-blue/50 focus:ring-blue/50 focus:outline-blue/50 transition duration-500 ease-in" placeholder="message" ></textarea>
             </div>
           <div className="flex justify-center w-full pb-4">
-            <button type="submit" className="bg-custom-blue border border-custom-blue rounded-md py-2 px-4 hover:text-white hover:bg-indigo-700 font-mono text-white/100 text-lg md:w-1/4 w-full">Register</button>
+            <button type="submit" className="bg-custom-blue border border-custom-blue rounded-md py-2 px-6 hover:text-white hover:bg-indigo-700 font-mono text-white/100 md:w-1/4 w-full md:mx-0 mx-6">Register</button>
           </div>
               </form>
              </div>

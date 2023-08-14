@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "rc-calendar": "^9.15.11",
     "react": "^18.2.0",
+    "react-calendar": "^4.6.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2"
   },
