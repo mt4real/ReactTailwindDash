@@ -1,6 +1,6 @@
 import React,{ useContext, useState} from "react";
 import NavHeaderSecond from '../../utils/dashboardComponents/NavHeader';
-import SidebarSecond from '../../utils/dashboardComponents/Sidebar';
+import Sidebar from '../../utils/dashboardComponents/Sidebar';
 import { GlobalStateContext } from "../../../GlobalStateContext";
 import Footer from "../../utils/footer/Footer";
 import Button from "../../utils/button/Button";
@@ -10,7 +10,7 @@ export default function FormLayout() {
   const dashboard=useContext(GlobalStateContext);
   return (
     <>
-     <SidebarSecond/>
+     <Sidebar/>
      <div className={`min-h-screen relative ${
               dashboard.hideSidebar?'w-full left-0 transition-all duration-500':'calc-width left-64 transition-all duration-500'}`}>
                

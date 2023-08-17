@@ -22,7 +22,7 @@ import IconListTask from '../../../assets/icons/IconListTask';
 import IconUikit from '../../../assets/icons/IconUiKit';
 
 
-export default function SidebarSecond() {
+export default function Sidebar() {
 
   
     const pages=[

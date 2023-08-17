@@ -64,7 +64,7 @@ html{
     @apply w-[calc(100%-16rem)]
     }
     .content{
-      @apply max-w-[100vw] md:w-[85vw] w-screen pt-6 px-10 pb-3  flex-1  
+      @apply max-w-[100vw] md:w-[80vw] w-screen pt-6 px-10 pb-3  flex-1  
       }
       .wrapper{
         @apply w-full flex items-stretch

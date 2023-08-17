@@ -1,5 +1,5 @@
 import React,{ useContext, useState} from "react";
-import SidebarSecond from '../../utils/dashboardComponents/Sidebar';
+import Sidebar from '../../utils/dashboardComponents/Sidebar';
 import NavHeaderSecond from '../../utils/dashboardComponents/NavHeader';
 import Footer from '../../utils/footer/Footer';
 import { GlobalStateContext } from "../../../GlobalStateContext";
@@ -140,7 +140,7 @@ export default function Tables() {
     
     return (
         <>
-         <SidebarSecond/>
+         <Sidebar/>
          <div className={`min-h-screen relative  ${
                   dashboard.hideSidebar?'w-full left-0 transition-all duration-500':'calc-width left-64 transition-all duration-500'}`}>
                    

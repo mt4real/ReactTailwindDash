@@ -7,7 +7,7 @@ export default function MessageNotificationLists() {
      const dashboard=useContext(GlobalStateContext);
   return (
     <>
-     <SidebarSecond/>
+     <Sidebar/>
      <div className={`min-h-screen relative ${
               dashboard.hideSidebar?'w-full left-0 transition-all duration-500':'calc-width left-64 transition-all duration-500'}`}>
                

@@ -1,6 +1,6 @@
 import React,{ useContext, useState} from "react";
 import NavHeaderSecond from '../../utils/dashboardComponents/NavHeader';
-import SidebarSecond from '../../utils/dashboardComponents/Sidebar';
+import Sidebar from '../../utils/dashboardComponents/Sidebar';
 import { GlobalStateContext } from "../../../GlobalStateContext";
 import Footer from "../../utils/footer/Footer";
 import Image1 from "../../../assets/images/avatar.jpg";
@@ -187,7 +187,7 @@ export default function Tasks() {
   const dashboard=useContext(GlobalStateContext);
   return (
     <>
-     <SidebarSecond/>
+     <Sidebar/>
      <div className={`min-h-screen relative ${
               dashboard.hideSidebar?'w-full left-0 transition-all duration-500':'calc-width left-64 transition-all duration-500'}`}>
                
@@ -200,7 +200,7 @@ export default function Tasks() {
             <h4 className="text-2xl md:text-3xl text-black font-normal">Tasks</h4>
             </div>
             <div>
-            <Button className="bg-custom-blue rounded hover:text-white hover:bg-blue-600 text-white px-6 py-2"><IconPlus className="inline-block font-extrabold text-white text-2xl"></IconPlus>Add task</Button>
+            <Button className="bg-custom-blue rounded hover:text-white hover:bg-blue-600 text-white px-4 py-2"><IconPlus className="inline-block font-extrabold text-white text-xl"></IconPlus>Add task</Button>
             </div>
             </div>
            <div className="flex flex-col md:flex-row lg:flex-row">
